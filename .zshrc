@@ -101,3 +101,6 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
+
+#Set config alias
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
