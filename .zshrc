@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Miral/.oh-my-zsh
@@ -103,4 +104,7 @@ eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
 
 #Set config alias
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
+
+artii "Hello Miral" | lolcat
+fortune | cowsay | lolcat
