@@ -1,6 +1,14 @@
+" ===== Vundle Initialization =====
+
+" " This loads all the plugins specified in ~/vundle.vim
+" " Use Vundle plugin to manage all other plugins
+if filereadable(expand("~/vundles.vim"))
+  source ~/vundles.vim
+endif
+
 " ===== General =====
 
-" colorscheme badwolf     " theme
+colorscheme onedark     " theme
 syntax on               " enable syntax highlighting
 set nocompatible        " turn off vi compatibility
 
@@ -41,15 +49,6 @@ map <leader>h :nohl<cr> " clear the highlight
 " ===== Custom keybinding =====
 
 let mapleader=","       " leader is comma
-
-
-" ===== Vundle Initialization =====
-
-" " This loads all the plugins specified in ~/vundle.vim
-" " Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/vundles.vim"))
-  source ~/vundles.vim
-endif
 
 " ===== NerdTree =====
 " toggle NERDTree with F9

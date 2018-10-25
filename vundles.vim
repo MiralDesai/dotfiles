@@ -16,8 +16,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 " === Git status for file tree ===
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-
-
+" === One dark theme ===
+Plugin 'joshdick/onedark.vim'
 
 
 " All of your Plugins must be added before the following line
