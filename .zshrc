@@ -73,6 +73,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
