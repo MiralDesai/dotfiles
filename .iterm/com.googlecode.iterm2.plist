@@ -58,7 +58,7 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>342 188 770 425 0 0 1440 900 </string>
+	<string>342 127 814 486 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>232 214 570 469 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
@@ -629,7 +629,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string> </string>
+			<string> Default</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco 12</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -1328,7 +1328,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>88AA5E5D-78B4-4BCE-94C5-5FD67F29FF52</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>16</integer>
+	<integer>17</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
