@@ -8,7 +8,7 @@ export ZSH=/Users/Miral/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME=""
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -74,6 +74,12 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# custom theme https://github.com/sindresorhus/pure
+# install by running npm install --global pure-prompt
+autoload -U promptinit; promptinit
+# options for pure can go here
+prompt pure
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -105,6 +111,7 @@ if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="$EDITOR ~/.zshrc"
 
 #Set config alias for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
