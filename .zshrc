@@ -68,6 +68,7 @@ plugins=(
   rbenv
   github
   kubectl
+  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
