@@ -115,7 +115,7 @@ if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 alias zshconfig="$EDITOR ~/.zshrc"
 
 #Set config alias for dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
