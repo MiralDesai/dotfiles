@@ -62,11 +62,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
   git
   rails
-  rake
   ruby
-  gem
   rbenv
-  github
   kubectl
   docker-compose
 )
