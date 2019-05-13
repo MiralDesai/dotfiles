@@ -70,6 +70,9 @@ brew cask install ${CASKS[@]}
 
 echo "Configuring macOS..."
 
+# Autohide dock
+defaults write com.apple.dock autohide -bool true
+
 # Set fast key repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 
@@ -79,6 +82,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Show filename extensions by default
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Restart dock
+killall Dock
 echo ""
 echo "Done"
 echo ""
