@@ -52,6 +52,7 @@ CASKS=(
     aerial
     insomnia
     docker-edge
+    firefox
 )
 
 echo "Installing your favourite apps..."
