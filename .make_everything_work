@@ -36,6 +36,8 @@ PACKAGES=(
     postgresql
     yarn
     kubernetes-cli
+    kafka
+    awscli
 )
 
 echo "Installing your favourite packages..."
@@ -49,6 +51,7 @@ CASKS=(
     1password-cli
     aerial
     insomnia
+    docker-edge
 )
 
 echo "Installing your favourite apps..."
