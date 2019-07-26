@@ -84,6 +84,8 @@ echo "Configuring macOS..."
 
 # Autohide dock
 defaults write com.apple.dock autohide -bool true
+# Autohide menubar
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 # Set fast key repeat rate
 defaults write -g InitialKeyRepeat -int 10
@@ -96,7 +98,11 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Show filename extensions by default
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Restart dock
+# Turn on key repeat when holding a button down
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Restart dock & finder
+killall Finder
 killall Dock
 echo ""
 echo "Done"
