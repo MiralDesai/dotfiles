@@ -51,7 +51,7 @@ map <leader>h :nohl<cr> " clear the highlight
 let mapleader=","       " leader is comma
 
 " ===== NerdTree =====
-" toggle NERDTree with F9
-map <F9> <Esc>:NERDTreeToggle<CR><Esc>
+" toggle NERDTree with Ctrl + n
+map <C-n> :NERDTreeToggle<CR>s
 " close vim when the only window left is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
