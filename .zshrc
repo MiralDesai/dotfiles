@@ -83,12 +83,7 @@ prompt pure
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='code'
-fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -113,6 +108,9 @@ alias zshconfig="$EDITOR ~/.zshrc"
 
 #Set config alias for dotfiles
 alias config='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
+
+# Stop trying to correct what aint broke
+alias bundle='nocorrect bundle'
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
