@@ -112,6 +112,9 @@ alias config='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 # Stop trying to correct what aint broke
 alias bundle='nocorrect bundle'
 
+# Use fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"

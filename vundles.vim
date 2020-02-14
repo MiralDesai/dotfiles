@@ -1,10 +1,10 @@
 " ===== Vundle config =====
-" install vundle with: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+" install vundle with: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
 
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -12,10 +12,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" === File tree ===
-Plugin 'scrooloose/nerdtree'
-" === Git status for file tree ===
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 " === One dark theme ===
 Plugin 'joshdick/onedark.vim'
 

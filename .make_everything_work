@@ -40,6 +40,7 @@ PACKAGES=(
     yarn
     kubernetes-cli
     awscli
+    fzf
 )
 
 echo "Installing your favourite packages..."
@@ -112,3 +113,6 @@ NOTE: Make sure to add bash to your list of acceptable shells:
     \`echo "/usr/local/bin/bash" | sudo tee -a /etc/shells\`
 "
 echo "Restart your terminal"
+
+
+# $(brew --prefix)/opt/fzf/install -- run this somewhere

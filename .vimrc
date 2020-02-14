@@ -45,13 +45,9 @@ set ignorecase          " ignore case when searching
 set smartcase           " don't ignore case if we search with caps
 map <leader>h :nohl<cr> " clear the highlight
 
-
 " ===== Custom keybinding =====
 
 let mapleader=","       " leader is comma
 
-" ===== NerdTree =====
-" toggle NERDTree with Ctrl + n
-map <C-n> :NERDTreeToggle<CR>s
-" close vim when the only window left is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" ===== fzf =====
+set rtp+=/usr/local/opt/fzf
