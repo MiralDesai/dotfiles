@@ -31,6 +31,8 @@ set wildmenu            " visual autocomplete for command menu
 set confirm             " prompt if error on unsaved changes
 " set visualbell          " use visual bell instead of audible one
 
+set clipboard=unnamed   " save to system clipboard when copying
+
 
 " ===== Autosave after exiting insert mode =====
 

@@ -41,6 +41,7 @@ PACKAGES=(
     kubernetes-cli
     awscli
     fzf
+    vim
 )
 
 echo "Installing your favourite packages..."
