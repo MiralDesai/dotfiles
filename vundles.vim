@@ -13,8 +13,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " === One dark theme ===
-Plugin 'joshdick/onedark.vim'
+" Plugin 'joshdick/onedark.vim'
 
+" === Flat colour scheme ===
+Plugin 'davidosomething/vim-colors-meh'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

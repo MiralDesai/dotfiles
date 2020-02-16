@@ -8,7 +8,7 @@ endif
 
 " ===== General =====
 
-colorscheme onedark     " theme
+colorscheme meh        " theme
 syntax on               " enable syntax highlighting
 set nocompatible        " turn off vi compatibility
 
@@ -33,6 +33,7 @@ set confirm             " prompt if error on unsaved changes
 
 set clipboard=unnamed   " save to system clipboard when copying
 
+set backspace=indent,eol,start " set backspace to work like normal
 
 " ===== Autosave after exiting insert mode =====
 
