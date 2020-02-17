@@ -8,32 +8,32 @@ endif
 
 " ===== General =====
 
-colorscheme meh        " theme
-syntax on               " enable syntax highlighting
-set nocompatible        " turn off vi compatibility
+colorscheme meh                 " theme
+syntax on                       " enable syntax highlighting
+set nocompatible                " turn off vi compatibility
 
-set laststatus=2        " always show the status line
-set cmdheight=2         " set cmd height to 2 lines
+set laststatus=2                " always show the status line
+set cmdheight=2                 " set cmd height to 2 lines
 
-set tabstop=4           " number of spaces in a tab
-set softtabstop=4       " number of spaces in a tab when editing
-set expandtab           " tabs are spaces
+set tabstop=4                   " number of spaces in a tab
+set softtabstop=4               " number of spaces in a tab when editing
+set expandtab                   " tabs are spaces
 
-set number              " show line numbers
-set showcmd             " show command at bottom
-set showmatch           " show matching parenthesis
+set number                      " show line numbers
+set showcmd                     " show command at bottom
+set showmatch                   " show matching parenthesis
 
-filetype indent on      " filetype detection
-set autoindent          " keep indent style even if file type not detected
+filetype indent on              " filetype detection
+set autoindent                  " keep indent style even if file type not detected
 
-set wildmenu            " visual autocomplete for command menu
+set wildmenu                    " visual autocomplete for command menu
 
-set confirm             " prompt if error on unsaved changes
-" set visualbell          " use visual bell instead of audible one
+set confirm                     " prompt if error on unsaved changes
+" set visualbell                " use visual bell instead of audible one
 
-set clipboard=unnamed   " save to system clipboard when copying
+set clipboard=unnamed           " save to system clipboard when copying
 
-set backspace=indent,eol,start " set backspace to work like normal
+set backspace=indent,eol,start  " set backspace to work like normal
 
 " ===== Autosave after exiting insert mode =====
 
@@ -51,6 +51,14 @@ map <leader>h :nohl<cr> " clear the highlight
 " ===== Custom keybinding =====
 
 let mapleader=","       " leader is comma
+
+" === Line length highlighting ===
+
+let &colorcolumn=join(range(81,999),",")
+let &colorcolumn="80,".join(range(400,999),",")
+
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+match OverLength /\%>80v.\+/
 
 " ===== fzf =====
 set rtp+=/usr/local/opt/fzf
