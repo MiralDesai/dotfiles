@@ -15,8 +15,8 @@ set nocompatible                " turn off vi compatibility
 set laststatus=2                " always show the status line
 set cmdheight=2                 " set cmd height to 2 lines
 
-set tabstop=4                   " number of spaces in a tab
-set softtabstop=4               " number of spaces in a tab when editing
+set tabstop=2                   " number of spaces in a tab
+set softtabstop=2               " number of spaces in a tab when editing
 set expandtab                   " tabs are spaces
 
 set number                      " show line numbers
