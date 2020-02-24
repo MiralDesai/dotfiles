@@ -57,8 +57,9 @@ let mapleader=","       " leader is comma
 let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(400,999),",")
 
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-match OverLength /\%>80v.\+/
+" Highlight chars over 80
+" highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+" match OverLength /\%>80v.\+/
 
 " ===== fzf =====
 set rtp+=/usr/local/opt/fzf
