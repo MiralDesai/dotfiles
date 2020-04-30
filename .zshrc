@@ -72,12 +72,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+PURE_PROMPT_SYMBOL='>'
 # custom theme https://github.com/sindresorhus/pure
 # install by running npm install --global pure-prompt
 autoload -U promptinit; promptinit
 # options for pure can go here
+zstyle :prompt:pure:git:stash show yes
+zstyle :prompt:pure:prompt:success color '#FFFFFF'
+zstyle :prompt:pure:path color '#0099FF'
 prompt pure
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
