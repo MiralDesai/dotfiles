@@ -99,6 +99,10 @@ export HASSIO_SSH_KEY="~/.ssh/hassio_rsa"
 # install kubectl auto complete
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 
+# auto cd and cd vars
+setopt autocd
+setopt cdablevars
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -111,6 +115,9 @@ alias zshconfig="$EDITOR ~/.zshrc"
 
 #Set config alias for dotfiles
 alias config='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
+
+#Alias for fd workspace
+hash -d fd=$HOME/Documents/farmdrop/
 
 # Stop trying to correct what aint broke
 alias bundle='nocorrect bundle'
