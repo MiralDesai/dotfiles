@@ -29,7 +29,6 @@ PACKAGES=(
     readline
     git
     tmux
-    direnv
     watch
     rbenv
     pyenv
@@ -42,6 +41,8 @@ PACKAGES=(
     awscli
     fzf
     vim
+    exa
+    bat
 )
 
 echo "Installing your favourite packages..."
@@ -49,7 +50,7 @@ brew install ${PACKAGES[@]}
 
 CASKS=(
     visual-studio-code
-    homebrew/cask-versions/iterm2-nightly
+    iterm2
     1password-cli
     aerial
     insomnia
@@ -60,6 +61,8 @@ CASKS=(
     dash3
     slack
     postico
+    clipy
+    standard-notes
 )
 
 echo "Installing your favourite apps..."

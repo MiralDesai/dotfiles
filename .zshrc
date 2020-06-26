@@ -122,6 +122,12 @@ hash -d fd=$HOME/Documents/farmdrop/
 # Stop trying to correct what aint broke
 alias bundle='nocorrect bundle'
 
+# Better ls
+alias ls='exa'
+
+# Better cat
+alias cat='bat'
+
 # Use fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
