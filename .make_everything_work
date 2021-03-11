@@ -72,7 +72,7 @@ echo "Cleaning up..."
 brew cleanup
 
 echo "Installing fonts..."
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 FONTS=(
     font-hack
     font-roboto
