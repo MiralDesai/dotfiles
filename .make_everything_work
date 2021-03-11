@@ -57,7 +57,6 @@ CASKS=(
     docker-edge
     firefox
     spotify
-    spotify-notifications
     dash3
     slack
     postico
