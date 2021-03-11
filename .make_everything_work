@@ -72,7 +72,6 @@ echo "Installing fonts..."
 brew tap homebrew/cask-fonts
 FONTS=(
     font-hack
-    font-roboto
 )
 brew install --cask ${FONTS[@]}
 
