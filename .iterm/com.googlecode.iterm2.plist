@@ -18,6 +18,114 @@
 	<string>7871804D-4A75-4F83-BB73-B188D7F70003</string>
 	<key>EnableDivisionView</key>
 	<false/>
+	<key>GlobalKeyMap</key>
+	<dict>
+		<key>0x19-0x60000</key>
+		<dict>
+			<key>Action</key>
+			<integer>39</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x2f-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x9-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>32</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf700-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>7</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf701-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>6</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf702-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>2</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf702-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>33</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>0</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>34</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf729-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>5</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72b-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>4</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72c-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72c-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72d-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>8</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72d-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>8</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideTabCloseButton</key>
@@ -54,7 +162,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -78,11 +186,11 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>234 86 799 448 0 0 1440 900 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 381 620 392 0 0 1440 900 </string>
+	<string>2410 246 620 392 1440 -540 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>341 251 688 209 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>850 36 570 392 0 0 1440 900 </string>
+	<string>0 312 878 588 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>196 52 570 467 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
@@ -1554,6 +1662,7 @@
 		<string>3.3.20190623-nightly</string>
 		<string>3.3.20190717-nightly</string>
 		<string>3.3.20200109-nightly</string>
+		<string>3.3.11</string>
 		<string>3.3.20190807-nightly</string>
 		<string>3.3.20200122-nightly</string>
 		<string>3.3.20200426-nightly</string>
@@ -1570,25 +1679,33 @@
 		<string>3.3.20200305-nightly</string>
 		<string>3.3.20190929-nightly</string>
 		<string>3.3.20191106-nightly</string>
+		<string>3.3.9</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
 		<string>Hack</string>
 		<string>Menlo</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{1440, -540}, {2560, 1440}}</string>
+		<key>topLeft</key>
+		<string>{2417, 676}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{1440, -540}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{249, 698}</string>
+		<string>{2622, 343}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>88AA5E5D-78B4-4BCE-94C5-5FD67F29FF52</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>188</integer>
+	<integer>240</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1973,6 +2090,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.selection</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>frame</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -2086,6 +2211,14 @@
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.selectionLength</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2407,15 +2540,15 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly_new.xml?shard=70</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=70</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-28T13:49:59Z</date>
+	<date>2020-07-01T08:36:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>785660220</integer>
+	<integer>1731454671</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -2441,7 +2574,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20200426-nightly</string>
+	<string>3.3.11</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
