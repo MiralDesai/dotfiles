@@ -25,6 +25,13 @@ brew install coreutils
 echo "Installing latest verion of bash 🤷‍♂️"
 brew install bash
 
+#Install Zsh & Oh My Zsh
+echo "Installing Oh My ZSH..."
+curl -L http://install.ohmyz.sh | sh
+
+echo "Setting ZSH as shell..."
+chsh -s /bin/zsh
+
 PACKAGES=(
     readline
     git
@@ -58,10 +65,10 @@ CASKS=(
     firefox
     spotify
     dash3
-    slack
     postico
     clipy
     standard-notes
+    slack
 )
 
 echo "Installing your favourite apps..."
@@ -104,6 +111,9 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Turn on key repeat when holding a button down
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# Disable annoying backswipe in Chrome
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+
 # Restart dock & finder
 killall Finder
 killall Dock
@@ -118,3 +128,11 @@ echo "Restart your terminal"
 
 
 # $(brew --prefix)/opt/fzf/install -- run this somewhere
+
+# --- future plans if possible ---
+#
+# setup mac touchpad/keyboard settings
+# add appcleaner if available on homebrew
+# vim setup here?
+#
+# make more resiliant, dont throw errors if already installed
