@@ -64,10 +64,10 @@ CASKS=(
     docker-edge
     firefox
     spotify
-    dash3
     postico
     clipy
     standard-notes
+    lepton
     slack
 )
 
@@ -113,6 +113,9 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Disable annoying backswipe in Chrome
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+
+# Disable annoying backswipe in Firefox
+defaults write org.mozilla.firefox AppleEnableSwipeNavigateWithScrolls -bool false
 
 # Restart dock & finder
 killall Finder
