@@ -2,8 +2,12 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/Miral/.oh-my-zsh
+if [[ $(hostname) = 'MACSB-C02V2DGPHTD6' ]]; then
+  export ZSH=/Users/miral.desai/.oh-my-zsh
+else
+  # Path to your oh-my-zsh installation.
+  export ZSH=/Users/Miral/.oh-my-zsh
+fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
