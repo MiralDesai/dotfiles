@@ -123,6 +123,9 @@ alias config='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 #Alias for fd workspace
 hash -d fd=$HOME/Documents/farmdrop/
 
+# Alias for sb workspace
+hash -d sb=$HOME/Documents/simplybusiness/
+
 # Stop trying to correct what aint broke
 alias bundle='nocorrect bundle'
 
@@ -139,5 +142,4 @@ eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"
 
-artii "Hello Miral" | lolcat
 fortune | cowsay | lolcat
