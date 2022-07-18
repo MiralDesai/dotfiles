@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
-if [[ $(hostname) = 'MACSB-C02V2DGPHTD6' ]]; then
+if [[ $(hostname) = 'MACSB-QV6V5HCRQD' ]]; then
   export ZSH=/Users/miral.desai/.oh-my-zsh
 else
   # Path to your oh-my-zsh installation.
@@ -76,9 +76,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+fpath+=/opt/homebrew/share/zsh/site-functions
 PURE_PROMPT_SYMBOL='>'
 # custom theme https://github.com/sindresorhus/pure
-# install by running npm install --global pure-prompt
+# install by running brew install pure
 autoload -U promptinit; promptinit
 # options for pure can go here
 zstyle :prompt:pure:git:stash show yes
@@ -140,6 +141,8 @@ alias cat='bat'
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
-eval "$(direnv hook zsh)"
+
+# Source nvm
+source ~/.nvm/nvm.sh
 
 fortune | cowsay | lolcat
