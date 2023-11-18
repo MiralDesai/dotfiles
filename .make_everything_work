@@ -103,26 +103,88 @@ brew install --cask ${FONTS[@]}
 echo "### Cleaning up..."
 brew cleanup
 
-echo "Configuring macOS..."
+echo "### Configuring macOS..."
+
+############
+### Dock
+############
+
+# Minimize windows into application icon
+defaults write com.apple.dock minimize-to-application -bool true
 
 # Autohide dock
 defaults write com.apple.dock autohide -bool true
-# Autohide menubar
-defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
+# Dont automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+############
+### Keyboard
+############
 
 # Set fast key repeat rate
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 3
 
+# Turn on key repeat when holding a button down
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+############
+### General
+############
+
+# Autohide menubar
+defaults write com.apple.dock autohide -bool true
+
 # Require password as soon as screensaver or sleep mode starts
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Disable stage manager
+defaults write com.apple.WindowManager GloballyEnabled -bool false
+
+# Click in the scrollbar to: Jump to the spot that's clicked
+defaults write -globalDomain AppleScrollerPagingBehavior -bool true
+
+# Show bluetooth in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Bluetooth" -bool true
+
+# Remove search from menu bar
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 1
+
+# Automatically quit printer app once the print jobs complete
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# Expanding the save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Disable recent applications in Dock
+defaults write com.apple.dock "show-recents"  -bool false
+
+# Set trackpad speed
+defaults write -g com.apple.trackpad.scaling 2
+
+# Disable creation of .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+############
+### Finder
+############
+
 # Show filename extensions by default
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Turn on key repeat when holding a button down
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# Disable warning before changing an extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Show file path
+defaults write com.apple.finder ShowPathbar -bool true
+
+############
+### App specific
+############
 
 # Disable annoying backswipe in Chrome
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
