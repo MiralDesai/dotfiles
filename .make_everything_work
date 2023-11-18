@@ -50,6 +50,7 @@ PACKAGES=(
     vim
     eza
     bat
+    pure
 )
 # kubernetes-cli
 
@@ -60,12 +61,11 @@ CASKS=(
     visual-studio-code
     iterm2
     1password-cli
+    1password
     aerial
-    docker-edge
     firefox
     spotify
     postico
-    clipy
     standard-notes
     slack
     obsidian
@@ -82,6 +82,8 @@ CASKS=(
     the-unarchiver
     appcleaner
 )
+# docker
+# maccy in the future?
 
 echo "### Installing your favourite apps..."
 brew install --cask ${CASKS[@]}
