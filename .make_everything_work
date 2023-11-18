@@ -4,7 +4,7 @@
 # 
 # This is idempotent.
 
-echo "Starting..."
+echo "### Starting..."
 
 # Install homebrew if not there
 if test ! $(which brew); then
@@ -22,14 +22,14 @@ brew tap homebrew/cask-versions
 brew install coreutils
 
 # Install latest version of bash
-echo "Installing latest verion of bash 🤷‍♂️"
+echo "### Installing latest verion of bash 🤷"
 brew install bash
 
 #Install Zsh & Oh My Zsh
-echo "Installing Oh My ZSH..."
-curl -L http://install.ohmyz.sh | sh
+echo "### Installing Oh My ZSH..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
 
-echo "Setting ZSH as shell..."
+echo "### Setting ZSH as shell..."
 chsh -s /bin/zsh
 
 PACKAGES=(
@@ -53,8 +53,7 @@ PACKAGES=(
 )
 # kubernetes-cli
 
-
-echo "Installing your favourite packages..."
+echo "### Installing your favourite packages..."
 brew install ${PACKAGES[@]}
 
 CASKS=(
@@ -84,11 +83,10 @@ CASKS=(
     appcleaner
 )
 
-echo "Installing your favourite apps..."
+echo "### Installing your favourite apps..."
 brew install --cask ${CASKS[@]}
 
-
-echo "Installing fonts..."
+echo "### Installing fonts..."
 brew tap homebrew/cask-fonts
 FONTS=(
     font-hack
@@ -100,7 +98,7 @@ brew install --cask ${FONTS[@]}
 # )
 # sudo gem install ${RUBY_GEMS[@]}
 
-echo "Cleaning up..."
+echo "### Cleaning up..."
 brew cleanup
 
 echo "Configuring macOS..."
