@@ -102,7 +102,7 @@ export SSH_KEY="~/.ssh/id_rsa"
 export HASSIO_SSH_KEY="~/.ssh/hassio_rsa"
 
 # install kubectl auto complete
-if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+# if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 
 # auto cd and cd vars
 setopt autocd
@@ -143,6 +143,7 @@ eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
 # Source nvm
-source ~/.nvm/nvm.sh
+test -f ~/.nvm/nvm.sh && source ~/.nvm/nvm.sh
+
 
 fortune | cowsay | lolcat
