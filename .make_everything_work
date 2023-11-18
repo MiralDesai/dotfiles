@@ -39,18 +39,20 @@ PACKAGES=(
     watch
     rbenv
     pyenv
+    nvm
     stern
     cowsay
     fortune
     postgresql
     yarn
-    kubernetes-cli
     awscli
     fzf
     vim
-    exa
+    eza
     bat
 )
+# kubernetes-cli
+
 
 echo "Installing your favourite packages..."
 brew install ${PACKAGES[@]}
@@ -60,15 +62,26 @@ CASKS=(
     iterm2
     1password-cli
     aerial
-    insomnia
     docker-edge
     firefox
     spotify
     postico
     clipy
     standard-notes
-    lepton
     slack
+    obsidian
+    vlc
+    whatsapp
+    tempbox
+    microsoft-edge
+    raycast
+    authy
+    discord
+    flux
+    mailspring
+    openmtp
+    the-unarchiver
+    appcleaner
 )
 
 echo "Installing your favourite apps..."

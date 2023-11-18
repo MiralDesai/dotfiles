@@ -131,7 +131,7 @@ hash -d sb=$HOME/Documents/simplybusiness/
 alias bundle='nocorrect bundle'
 
 # Better ls
-alias ls='exa'
+alias ls='eza'
 
 # Better cat
 alias cat='bat'
