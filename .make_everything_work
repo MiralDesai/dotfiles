@@ -203,15 +203,19 @@ echo "
 NOTE: Make sure to add bash to your list of acceptable shells:
     \`echo "/usr/local/bin/bash" | sudo tee -a /etc/shells\`
 "
-echo "Restart your terminal"
+echo "### Restart your terminal"
+echo ""
+echo "Some apps require manual install: \
 
+    - https://apps.apple.com/us/app/menu-bar-calendar/id1558360383
+    - https://apps.apple.com/us/app/meeter-for-zoom-teams-co/id1510445899
+"
 
 # $(brew --prefix)/opt/fzf/install -- run this somewhere
 
 # --- future plans if possible ---
 #
 # setup mac touchpad/keyboard settings
-# add appcleaner if available on homebrew
 # vim setup here?
 #
 # make more resiliant, dont throw errors if already installed
