@@ -81,9 +81,9 @@ CASKS=(
     openmtp
     the-unarchiver
     appcleaner
+    maccy
 )
 # docker
-# maccy in the future?
 
 echo "### Installing your favourite apps..."
 brew install --cask ${CASKS[@]}
@@ -92,6 +92,7 @@ echo "### Installing fonts..."
 brew tap homebrew/cask-fonts
 FONTS=(
     font-hack
+    font-roboto
 )
 brew install --cask ${FONTS[@]}
 
