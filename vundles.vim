@@ -1,5 +1,5 @@
 " ===== Vundle config =====
-" install vundle with: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
+" install vundle with: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 set nocompatible               " be iMproved
 filetype off                   " required!
