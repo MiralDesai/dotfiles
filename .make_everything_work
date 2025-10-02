@@ -12,18 +12,9 @@ if test ! $(which brew); then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# Update homebrew recipes
-brew update
-
-# Install alternative cask
-brew tap homebrew/cask-versions
-
-# Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
-
-# Install latest version of bash
-echo "### Installing latest verion of bash 🤷"
-brew install bash
+# Install brew packages if not already installed
+echo "### Installing packages and apps via homebrew..."
+brew bundle check || brew bundle install
 
 #Install Zsh & Oh My Zsh
 echo "### Installing Oh My ZSH..."
@@ -31,75 +22,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 echo "### Setting ZSH as shell..."
 chsh -s /bin/zsh
-
-PACKAGES=(
-    readline
-    git
-    tmux
-    watch
-    rbenv
-    pyenv
-    nvm
-    stern
-    cowsay
-    fortune
-    postgresql
-    yarn
-    awscli
-    fzf
-    vim
-    eza
-    bat
-    pure
-)
-# kubernetes-cli
-
-echo "### Installing your favourite packages..."
-brew install ${PACKAGES[@]}
-
-CASKS=(
-    visual-studio-code
-    iterm2
-    1password-cli
-    1password
-    aerial
-    firefox
-    spotify
-    postico
-    standard-notes
-    slack
-    obsidian
-    vlc
-    whatsapp
-    tempbox
-    microsoft-edge
-    raycast
-    authy
-    discord
-    flux
-    mailspring
-    openmtp
-    the-unarchiver
-    appcleaner
-    maccy
-)
-# docker
-
-echo "### Installing your favourite apps..."
-brew install --cask ${CASKS[@]}
-
-echo "### Installing fonts..."
-brew tap homebrew/cask-fonts
-FONTS=(
-    font-hack
-    font-roboto
-)
-brew install --cask ${FONTS[@]}
-
-# echo "Installing Ruby gems..."
-# RUBY_GEMS=(
-# )
-# sudo gem install ${RUBY_GEMS[@]}
 
 echo "### Cleaning up..."
 brew cleanup
