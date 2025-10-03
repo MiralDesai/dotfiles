@@ -61,12 +61,20 @@ defaults write -g KeyRepeat -int 3
 # Turn on key repeat when holding a button down
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
 ############
 ### General
 ############
 
-# Autohide menubar
+# Set date format in menu bar
+defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE HH:mm\""
+
+# Autohide menubar and disable delay
 defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Require password as soon as screensaver or sleep mode starts
 defaults write com.apple.screensaver askForPassword -int 1
@@ -100,6 +108,9 @@ defaults write -g com.apple.trackpad.scaling 2
 
 # Disable creation of .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Enable subpixel font rendering on non-Apple LCDs
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 ############
 ### Finder
