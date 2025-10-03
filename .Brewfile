@@ -60,3 +60,6 @@ vscode "vayan.haml"
 vscode "yzhang.markdown-all-in-one"
 vscode "enkia.tokyo-night"
 vscode "robbowen.synthwave-vscode"
+
+# Mac apps
+mas "Menu Bar Calendar", id: 1558360383
