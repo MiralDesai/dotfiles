@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
-if [[ $(hostname) = 'MACSB-QV6V5HCRQD' ]]; then
+if [[ $(hostname) = 'MACSB-F5W43H6XND' ]]; then
   export ZSH=/Users/miral.desai/.oh-my-zsh
 else
   # Path to your oh-my-zsh installation.
