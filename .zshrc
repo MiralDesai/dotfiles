@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+export PATH="/opt/homebrew/bin:$PATH"
 
 if [[ $(hostname) = 'MACSB-F5W43H6XND' ]]; then
   export ZSH=/Users/miral.desai/.oh-my-zsh
