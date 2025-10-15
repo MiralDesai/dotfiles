@@ -35,6 +35,12 @@ chsh -s /bin/zsh
 echo "### Cleaning up..."
 brew cleanup
 
+echo "### Installing vundles for vim..."
+if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
+  echo "##### Cloning vundle..."
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+
 echo "### Configuring macOS..."
 
 ############
@@ -152,6 +158,7 @@ echo "
 NOTE: Make sure to add bash to your list of acceptable shells:
     \`echo "/usr/local/bin/bash" | sudo tee -a /etc/shells\`
 "
+echo "MANUAL STEP REQUIRED: Open vim and run :PluginInstall to install your plugins"
 echo "### Restart your terminal"
 echo ""
 echo "Some apps require manual install: \
